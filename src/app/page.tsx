@@ -1,5 +1,3 @@
-import Hero from "@/components/Hero";
-import Nav from "@/components/Nav";
 import SingleCard from "@/components/SingleCard";
 
 export default function Home() {

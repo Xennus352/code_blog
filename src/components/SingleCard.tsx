@@ -1,4 +1,4 @@
-import { BookMarked, ChevronRight } from "lucide-react";
+import { BookMarked } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
