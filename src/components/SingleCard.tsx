@@ -1,6 +1,8 @@
 import { BookMarked } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import next from "../../public/next.svg"
 
 const SingleCard = () => {
   return (
@@ -10,7 +12,7 @@ const SingleCard = () => {
       <div>
         <div className="avatar flex justify-start gap-4">
           <div className="w-14 h-14 rounded-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            <Image alt="user photo" height={10} width={10} src={next} />
           </div>
           <div>
             <p>Admin</p>
