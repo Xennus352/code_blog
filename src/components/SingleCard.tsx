@@ -2,7 +2,7 @@ import { BookMarked } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import next from "../../public/next.svg"
+import next from "../../public/next.svg";
 
 const SingleCard = () => {
   return (
@@ -12,7 +12,7 @@ const SingleCard = () => {
       <div>
         <div className="avatar flex justify-start gap-4">
           <div className="w-14 h-14 rounded-full">
-            <Image alt="user photo" height={10} width={10} src={next} />
+            <Image alt="user photo" height={1} width={1} src={next} />
           </div>
           <div>
             <p>Admin</p>

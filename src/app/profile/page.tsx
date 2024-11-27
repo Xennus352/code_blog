@@ -1,19 +1,23 @@
+import { auth } from "@/auth";
 import BackButton from "@/components/BackButton";
+import LogoutBtn from "@/components/LogoutBtn";
 import ProfileCard from "@/components/ProfileCard";
 import React from "react";
 
-const page = () => {
+const page = async () => {
+  const session = await auth();
+
   return (
     <div>
       <div className="flex flex-col  h-screen">
         {/* hadder  */}
         <div className="flex justify-between m-2 items-center">
-          <BackButton /> <p className="btn btn-primary btn-outline">Logout</p>
+          <BackButton /> <LogoutBtn />
         </div>
         {/* bio contact */}
         <div className="flex flex-col items-center justify-center ">
           <h2 className="uppercase font-semibold underline">Profile</h2>
-          <ProfileCard />
+          {session && <ProfileCard session={session} />}
         </div>
 
         {/* save posts */}
